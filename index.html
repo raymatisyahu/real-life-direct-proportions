@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Math Error Detectives - Direct Variation</title>
+<title>Math Error Detectives - Direct Proportion</title>
 
 <style>
 :root{
@@ -574,8 +574,8 @@ input:focus,select:focus{
 <section class="top">
  <div class="brand">
   <div>
-   <div class="logo">🔎 MATH ERROR DETECTIVES</div>
-   <div class="tag">Grade 6 • Direct Variation • Ratio & Proportion</div>
+   <div class="logo">🔎 DIRECT PROPORTION DETECTIVES</div>
+   <div class="tag">Grade 6 • Direct Proportion • Ratio & Proportion</div>
   </div>
   <div class="scorepill">⭐ Score: <span id="score">0</span>/10 &nbsp; • &nbsp; 💰 Rewards: <span id="rewards">0</span></div>
  </div>
@@ -584,12 +584,21 @@ input:focus,select:focus{
 
 <section class="card start" id="start">
  <div class="detective">🕵️‍♂️</div>
- <h1>DIRECT VARIATION</h1>
- <h2>🔎 THE ERROR DETECTIVE MISSION</h2>
+ <h1>DIRECT PROPORTION</h1>
+ <h2>🔎 THE DIRECT PROPORTION ERROR DETECTIVE MISSION</h2>
 
- <p class="lead">
+ <div style="max-width:780px;margin:0 auto 20px;background:#eef6ff;border:2px solid #bfdbfe;border-radius:18px;padding:16px 20px;text-align:left;">
+  <div style="font-weight:950;color:#132b5c;font-size:1.05rem;">📘 LESSON FOCUS: DIRECT PROPORTION</div>
+  <div style="margin-top:6px;color:#42526b;line-height:1.6;font-size:1rem;">
+    In direct proportion, when one quantity increases or decreases,
+    the other quantity changes in the same proportion. Your mission is
+    to inspect each worker's ratio/proportion solution and identify the error.
+  </div>
+</div>
+
+<p class="lead">
   Help workers and professionals find mistakes in their
-  <strong>ratio and proportion solutions</strong>.
+  <strong>direct proportion solutions</strong>.
   You will receive <strong>10 randomly selected cases</strong>
   from a 100-question test bank.
  </p>
@@ -676,11 +685,16 @@ input:focus,select:focus{
   </div>
  </div>
 
+ <div style="margin-top:16px;background:#f8fafc;border:2px solid #dbe4f0;border-radius:16px;padding:13px 16px;">
+  <strong style="color:#132b5c;">📐 Direct Proportion Check:</strong>
+  <span style="color:#52627a;"> corresponding quantities should stay in the same order when the proportion is written.</span>
+</div>
+
  <div class="problem" id="problem"></div>
 
  <div class="solution" id="solution"></div>
 
- <div class="rewardbox">💰 <strong>Reward Mission:</strong> Correct answer = <strong>+10 coins</strong> &nbsp; | &nbsp; Wrong answer = <strong>-5 coins</strong></div>
+ <div class="rewardbox">💰 <strong>Direct Proportion Detective Reward:</strong> Correct answer = <strong>+10 coins</strong> &nbsp; | &nbsp; Wrong answer = <strong>-5 coins</strong></div>
 
  <div class="question">
   🚨 WHAT IS THE ERROR IN THE SOLUTION?
@@ -717,7 +731,7 @@ input:focus,select:focus{
  <h2 id="percent"></h2>
 
  <div class="badge" id="badge">
-  MATH ERROR DETECTIVE
+  DIRECT PROPORTION DETECTIVE
  </div>
 
  <p id="message"></p>
@@ -1003,12 +1017,12 @@ function finish(){
  $("percent").textContent=pct+"%";
 
  if(score===10){
-  $("badge").textContent="🏆 MASTER MATH ERROR DETECTIVE";
+  $("badge").textContent="🏆 MASTER DIRECT PROPORTION DETECTIVE";
   $("message").textContent=
    "Outstanding! You correctly analyzed all 10 ratio and proportion cases.";
  }
  else if(score>=8){
-  $("badge").textContent="🥇 MATH ERROR DETECTIVE";
+  $("badge").textContent="🥇 DIRECT PROPORTION DETECTIVE";
   $("message").textContent=
    "Excellent work! You showed strong skill in identifying mathematical errors.";
  }
